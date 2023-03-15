@@ -1,10 +1,25 @@
-#include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * get_str_len - gets the lengths of the string
+ * @str: string whose length is to be found.
+ * Return: returns integer value of the string.
+ */
+int get_str_len(char *str)
+{
+	int i;
+
+	for (i = 0; str[i] != '\0' ; i++)
+		;
+
+	return (i + 1);
+}
+/**
+ * str_concat - joins two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: contents of s1, followed by the contents of s2, and null terminated
+ * if NULL is passed, treat it as an empty string
+ * The function should return NULL on failure
  */
 char *str_concat(char *s1, char *s2)
 {
