@@ -28,4 +28,3 @@ char *_strdup(char *str);
 	aaa[r] = str[r];
 	return (aaa);
 }
-
